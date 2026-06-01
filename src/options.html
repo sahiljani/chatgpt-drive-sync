@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatGPT Drive Sync</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>ChatGPT Drive Sync</h1>
+        <p>Automatically saves ChatGPT conversations to Google Drive as JSON files.</p>
+      </header>
+
+      <section>
+        <h2>Google OAuth Setup</h2>
+        <pre id="setup">Loading...</pre>
+      </section>
+
+      <section>
+        <label for="folderName">Drive folder</label>
+        <div class="row">
+          <input id="folderName" type="text" value="ChatGPT Sync">
+          <button id="saveFolder">Save</button>
+        </div>
+      </section>
+
+      <section>
+        <button id="connect">Connect Google Drive</button>
+      </section>
+
+      <section>
+        <h2>Status</h2>
+        <pre id="status">Loading...</pre>
+      </section>
+
+      <section>
+        <div class="row row-between">
+          <h2>Recent Logs</h2>
+          <div class="row">
+            <button id="copyLogs" class="secondary">Copy Logs</button>
+            <button id="clearLogs" class="secondary">Clear Logs</button>
+          </div>
+        </div>
+        <pre id="logs">Loading...</pre>
+      </section>
+    </main>
+
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatGPT Drive Sync</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>ChatGPT Drive Sync</h1>
+        <span id="state">Loading</span>
+      </header>
+
+      <div class="actions">
+        <button id="connect">Connect</button>
+        <button id="sync">Sync Current</button>
+        <button id="options">Options</button>
+      </div>
+
+      <section>
+        <h2>Status</h2>
+        <div id="status" class="status-card">Loading...</div>
+      </section>
+
+      <section>
+        <div class="section-title">
+          <h2>Recent Activity</h2>
+          <div class="inline-actions">
+            <button id="copy" class="link">Copy</button>
+            <button id="clear" class="link">Clear</button>
+          </div>
+        </div>
+        <ol id="logs"></ol>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
